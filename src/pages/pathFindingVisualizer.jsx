@@ -235,10 +235,10 @@ export default class PathfindingVisualizer extends Component {
             );
           })}
         </div>
-        <div className=' text-gray-200 text-xl text-center pt-8'>
+        <div className=' text-gray-200 text-xl text-center pt-8 max-w-lg mx-auto'>
           {showCost && (
             cost > 1 ? (
-              <p>The cost of the shortest path is {this.state.cost}. <span className='text-sm'>Considering each node's weight to be 1</span> </p>
+              <p>The cost of the shortest path is {this.state.cost}. <span className=' text-xs italic'> Considering each node's weight to be 1</span> </p>
             ) : (
               <p>There doesn't exist any path.</p>
             )
